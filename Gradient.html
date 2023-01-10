@@ -41,3 +41,15 @@
         position: relative;
         cursor: pointer;
     }
+    .gradient-border::after {
+        content: "";
+        position: absolute;
+        left: -10px;
+        top: -10px;
+        height: calc(100% + 20px);
+        width: calc(100% + 20px);
+        background: linear-gradient(35deg, deepskyblue, deeppink, lawngreen);
+        border-radius: 50%;
+        z-index: -1;
+        filter: blur(3px);
+    }
